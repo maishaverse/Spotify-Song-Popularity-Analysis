@@ -181,16 +181,16 @@ def build_html(data, lr_df, rf_df):
         f"</tr>"
         for i, t in enumerate(tt, 1)
     )
-    
+
     lr_rows = ""
-for _, row in lr_df.head(10).iterrows():
-    color = "#17a74b" if row["coef"] > 0 else C_RED
-    lr_rows += (
-        f"<tr>"
-        f"<td>{row['feature']}</td>"
-        f"<td style='font-weight:bold;color:{color}'>{row['coef']:+.3f}</td>"
-        f"</tr>"
-    )
+    for _, row in lr_df.head(10).iterrows():
+        color = "#17a74b" if row["coef"] > 0 else C_RED
+        lr_rows += (
+            f"<tr>"
+            f"<td>{row['feature']}</td>"
+            f"<td style='font-weight:bold;color:{color}'>{row['coef']:+.3f}</td>"
+            f"</tr>"
+        )
 
     rec_cards = "".join(
         f'<div class="rec-card">'

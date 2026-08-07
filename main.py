@@ -1,5 +1,5 @@
 """
-Spotify Popularity Analysis — Pipeline Runner
+Spotify Song Popularity Analysis — Pipeline Runner
 Runs all 5 steps in sequence from a single entry point.
 
 Steps:

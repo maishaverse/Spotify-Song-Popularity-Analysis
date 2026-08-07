@@ -1,0 +1,253 @@
+{
+  "overview": {
+    "n_songs": 802,
+    "n_artists": 558,
+    "year_min": 1930,
+    "year_max": 2023,
+    "median_streams_M": 308.0,
+    "total_streams_B": 431.8,
+    "songs_over_1B": 141,
+    "songs_over_100M": 675
+  },
+  "playlist_quartile": {
+    "labels": [
+      "Q1 (Lowest)",
+      "Q2",
+      "Q3",
+      "Q4 (Highest)"
+    ],
+    "values": [
+      119.0,
+      185.0,
+      449.0,
+      1214.0
+    ]
+  },
+  "feature_importance": {
+    "labels": [
+      "BPM",
+      "Valence",
+      "Apple Charts",
+      "Danceability",
+      "Apple Playlists",
+      "Deezer Charts",
+      "Deezer Playlists",
+      "Spotify Charts",
+      "Time Since Release",
+      "Spotify Playlists"
+    ],
+    "values": [
+      0.019,
+      0.02,
+      0.027,
+      0.031,
+      0.034,
+      0.036,
+      0.054,
+      0.067,
+      0.085,
+      0.59
+    ]
+  },
+  "platform_reach": {
+    "labels": [
+      "1 Platform",
+      "2 Platforms",
+      "3 Platforms"
+    ],
+    "values": [
+      68.0,
+      118.0,
+      323.0
+    ]
+  },
+  "streams_by_year": {
+    "labels": [
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2019",
+      "2020",
+      "2021",
+      "2022",
+      "2023"
+    ],
+    "values": [
+      976.0,
+      873.0,
+      1605.0,
+      1288.0,
+      807.0,
+      849.0,
+      514.0,
+      231.0,
+      114.0
+    ]
+  },
+  "streams_by_month": {
+    "labels": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ],
+    "values": [
+      622.0,
+      218.0,
+      212.0,
+      220.0,
+      237.0,
+      140.0,
+      370.0,
+      428.0,
+      490.0,
+      344.0,
+      381.0,
+      268.0
+    ]
+  },
+  "solo_vs_collab": {
+    "labels": [
+      "Solo Artist",
+      "Collaboration"
+    ],
+    "values": [
+      350.0,
+      245.0
+    ]
+  },
+  "top_artists": {
+    "labels": [
+      "Doja Cat",
+      "Imagine Dragons",
+      "Dua Lipa",
+      "Justin Bieber",
+      "Eminem",
+      "Harry Styles",
+      "Taylor Swift",
+      "Ed Sheeran",
+      "Bad Bunny",
+      "The Weeknd"
+    ],
+    "values": [
+      7.6,
+      7.7,
+      7.9,
+      8.1,
+      10.2,
+      11.2,
+      13.9,
+      15.2,
+      19.5,
+      23.5
+    ]
+  },
+  "top_trendy": [
+    {
+      "track": "Flowers",
+      "artist": "Miley Cyrus",
+      "streams_per_day_M": 3.72,
+      "total_streams_M": 1317.0
+    },
+    {
+      "track": "Kill Bill",
+      "artist": "SZA",
+      "streams_per_day_M": 2.99,
+      "total_streams_M": 1163.0
+    },
+    {
+      "track": "Unholy (feat. Kim Petras)",
+      "artist": "Sam Smith, Kim Petras",
+      "streams_per_day_M": 2.64,
+      "total_streams_M": 1231.0
+    },
+    {
+      "track": "Ella Baila Sola",
+      "artist": "Eslabon Armado, Peso Pluma",
+      "streams_per_day_M": 2.49,
+      "total_streams_M": 726.0
+    },
+    {
+      "track": "Anti-Hero",
+      "artist": "Taylor Swift",
+      "streams_per_day_M": 2.29,
+      "total_streams_M": 1000.0
+    },
+    {
+      "track": "I'm Good (Blue)",
+      "artist": "Bebe Rexha, David Guetta",
+      "streams_per_day_M": 2.25,
+      "total_streams_M": 1109.0
+    },
+    {
+      "track": "Creepin'",
+      "artist": "The Weeknd, 21 Savage, Metro B",
+      "streams_per_day_M": 2.14,
+      "total_streams_M": 844.0
+    },
+    {
+      "track": "Shakira: Bzrp Music Sessions, Vol. ",
+      "artist": "Shakira, Bizarrap",
+      "streams_per_day_M": 2.03,
+      "total_streams_M": 722.0
+    },
+    {
+      "track": "TQG",
+      "artist": "Karol G, Shakira",
+      "streams_per_day_M": 1.98,
+      "total_streams_M": 619.0
+    },
+    {
+      "track": "un x100to",
+      "artist": "Bad Bunny, Grupo Frontera",
+      "streams_per_day_M": 1.95,
+      "total_streams_M": 506.0
+    }
+  ],
+  "audio_correlations": {
+    "labels": [
+      "Acousticness",
+      "Valence",
+      "Liveness",
+      "Energy",
+      "Instrumentalness",
+      "Danceability",
+      "Speechiness"
+    ],
+    "values": [
+      0.005,
+      0.007,
+      0.03,
+      0.034,
+      0.048,
+      0.073,
+      0.129
+    ]
+  },
+  "model": {
+    "lr_r2": 0.696,
+    "rf_r2": 0.853,
+    "training_rows": 558
+  },
+  "data_challenges": {
+    "raw_songs_rows": 949,
+    "raw_nodes_rows": 954,
+    "duplicates_songs": 136,
+    "duplicates_nodes": 138,
+    "encoding_errors": 88,
+    "month_format_issues": true,
+    "corrupted_streams_row": 1,
+    "final_rows": 809,
+    "missing_key": 80,
+    "missing_audio_features": 44
+  }
+}

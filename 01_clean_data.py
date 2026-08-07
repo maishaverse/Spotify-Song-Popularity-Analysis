@@ -31,8 +31,18 @@ DATA_DIR   = os.path.join(ROOT_DIR, "data")
 OUTPUT_DIR = os.path.join(ROOT_DIR, "outputs")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-SRC = os.path.join(DATA_DIR,   "spotify_data.xlsx")
+SRC = os.path.join(DATA_DIR, "spotify_data.xlsx")
 OUT = os.path.join(OUTPUT_DIR, "spotify_clean.csv")
+
+if not os.path.exists(SRC):
+    alt_src = os.environ.get("SPOTIFY_DATA_PATH", "").strip()
+    if alt_src and os.path.exists(alt_src):
+        SRC = alt_src
+    else:
+        raise FileNotFoundError(
+            f"Missing input workbook: {SRC}\n"
+            f"Place spotify_data.xlsx in {DATA_DIR} or set the SPOTIFY_DATA_PATH environment variable."
+        )
 
 
 # ── 1. Load ───────────────────────────────────────────────────────────────────
